@@ -1,0 +1,12 @@
+{
+  "name": "caliginous",
+  "version": "1.0.0",
+  "description": "A privacy-focused desktop browser built with Tauri & Rust",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  },
+  "dependencies": {}
+}
