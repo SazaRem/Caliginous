@@ -1,9 +1,4 @@
-diff --git a/README.md b/README.md
-index 5b0cac5de96dc763aa7ce95a0d73f78e0f1569c2..a14f9fddaf34eb6b01c88d90cf58a05d39211864 100644
---- a/README.md
-+++ b/README.md
-@@ -1,28 +1,77 @@
- # Caliginous Browser
+# Caliginous Browser
  
 -A privacy-focused desktop web browser built from scratch using Tauri 2 (Rust backend) + HTML/CSS/JavaScript frontend.
 +Caliginous is a standalone, privacy-focused desktop browser built with **Tauri 2** (Rust backend) and **vanilla HTML/CSS/JavaScript** (frontend).
@@ -21,6 +16,8 @@ index 5b0cac5de96dc763aa7ce95a0d73f78e0f1569c2..a14f9fddaf34eb6b01c88d90cf58a05d
 -- Frontend: Vanilla HTML/CSS/JS (no frameworks)
 -- UI Font: Junicode
 -- Code Font: JetBrains Mono
+
+
 +## Vision
 +
 +- **Privacy by design** (default-on protections, no telemetry-first mindset)
@@ -28,6 +25,8 @@ index 5b0cac5de96dc763aa7ce95a0d73f78e0f1569c2..a14f9fddaf34eb6b01c88d90cf58a05d
 +- **Aesthetic discipline** (dark-only UI, Junicode + JetBrains Mono, restrained neon accents)
 +- **Native-first extensibility** (modules/integrations instead of full Chrome-extension complexity)
 +
+
+
 +## Current Architecture
 +
 +- **Frontend**: `src/index.html`, `src/styles.css`, `src/main.js`
@@ -35,6 +34,8 @@ index 5b0cac5de96dc763aa7ce95a0d73f78e0f1569c2..a14f9fddaf34eb6b01c88d90cf58a05d
 +- **Permissions**: `src-tauri/capabilities/default.json`
 +- **App config**: `src-tauri/tauri.conf.json`
 +
+
+
 +## Current Status (April 2026)
 +
 +The project has a strong design identity and functional browser shell primitives, but is in an architecture transition:
@@ -44,28 +45,40 @@ index 5b0cac5de96dc763aa7ce95a0d73f78e0f1569c2..a14f9fddaf34eb6b01c88d90cf58a05d
 +- Privacy counters are currently placeholder/simulated in parts
 +- Some planned privacy features remain roadmap items
 +
+
+
 +## Prioritized Roadmap
 +
+
+
 +### Phase 1 — Make browsing path structurally correct
 +- Standardize on native webviews for page hosting
 +- Keep frontend as control surface and state/UI renderer
 +- Ensure robust open/close/switch/navigate tab lifecycle
 +
+
+
 +### Phase 2 — Stabilize browser behavior
 +- Improve URL/address parsing and error states
 +- Harden back/forward/reload behavior and sync
 +- Improve tab metadata sync (title/url/loading)
 +
+
+
 +### Phase 3 — Implement real privacy layer
 +- Request filtering and tracker/ad blocking
 +- HTTPS enforcement and URL tracking-parameter stripping
 +- Privacy UI indicators driven by real blocked events
 +
+
+
 +### Phase 4 — Isolation and advanced capabilities
 +- Session/state isolation options
 +- Password manager hardening flow
 +- Optional advanced integrations after core stability
 +
+
+
 +## Design Rules (Non-negotiable)
 +
 +- Dark-only chrome
@@ -73,6 +86,8 @@ index 5b0cac5de96dc763aa7ce95a0d73f78e0f1569c2..a14f9fddaf34eb6b01c88d90cf58a05d
 +- JetBrains Mono for URLs/numeric/technical text
 +- Single neon-white accent family
 +- Subtle animation and depth; no flashy motion
+ 
+
  
  ## Development
  
